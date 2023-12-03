@@ -1,0 +1,20 @@
+{
+  "name": "tiptop",
+  "version": "1.0.0",
+  "description": "Features:\r 1-Diverse Collection: Explore a vast array of shoes for every occasion, from casual sneakers to elegant formal wear. We've got the perfect pair for every style and personality.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
