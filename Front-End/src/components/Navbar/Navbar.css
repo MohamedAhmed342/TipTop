@@ -1,0 +1,132 @@
+/* navbar css */
+nav {
+  height: 80px;
+  position: fixed;
+  color: #fff;
+  background-color: transparent;
+  z-index: 9999999;
+}
+
+nav.active {
+  backdrop-filter: blur(4px) saturate(72%);
+  -webkit-backdrop-filter: blur(4px) saturate(72%);
+  background-color: rgba(17, 25, 40, 0.12);
+}
+
+nav a,
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .container {
+  max-width: 1280px;
+  padding: 1rem 2rem;
+  padding-right: 4rem;
+}
+
+nav .container > div {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  justify-content: center;
+}
+
+nav .menu,
+nav form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu {
+  padding-left: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav ul li a:hover {
+  color: rgb(190, 183, 183);
+}
+
+nav ul a {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+nav form {
+  margin-right: 2rem;
+}
+
+nav form input {
+  background: transparent;
+  color: #fff;
+  width: 12rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+}
+
+nav form input::placeholder {
+  color: #fff;
+}
+
+.logo {
+  
+  width: 3rem;
+  height: 3rem;
+  
+  display: inline-block;
+}
+
+/* animation of nav-btn */
+@keyframes swing {
+  0% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(-6deg);
+  }
+}
+
+.nav-btn {
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 1.4em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: swing ease-in-out 1s infinite alternate;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+nav .container .menu-btn {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 930px) {
+  nav .menu,
+  nav form {
+    display: none;
+  }
+}

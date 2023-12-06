@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #140639;
+  /* overflow: hidden;  */
+}
+
+
+
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+header::after {
+  /* content: "adidas";    */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 17em;
+  font-weight: 700;
+  z-index: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1150px) {
+  header::before {
+    display: none;
+  }
+  header {
+    height: initial;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  header {
+    height: initial;
+  }
+}

@@ -1,0 +1,164 @@
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -40em;
+  background: linear-gradient(85deg, #6e0381, #7307ee);
+  width: 100%;
+  /* overflow: hidden;    */
+  height: 120%; 
+  transform: rotate(70deg);
+  z-index: 0;
+  overflow: hidden;
+}
+
+.header::after {
+  /* content: "TipTop";    */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-size: 17em;
+  font-weight: 700;
+  z-index: 0;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  position: static;
+  z-index: 1;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 1em;
+  
+}
+
+/* left hero section here */
+.hero .leftHero {
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 3%;
+}
+
+.hero .leftHero h1 {
+  font-size: 3.5em;
+  margin: 0.5em 0;
+}
+
+.hero .leftHero .rating {
+  color: #fcc204;
+}
+
+.hero .leftHero p {
+  color: white  ;
+  letter-spacing: 2px;
+  line-height: 25px;
+  font-size: 0.9em;
+  margin: 2em 0 3em 0;
+  max-width: 40em;
+}
+
+.hero .leftHero .btn {
+  text-decoration: none;
+color: white;
+  padding: 0.7em 1.5em;
+  background: linear-gradient(to right,#c72092 , #6c14d0);
+  
+  border-radius: 3em;
+  letter-spacing: 1px;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.hero .leftHero .btn:hover {
+  background:  #6c14d0;
+}
+/* left hero section ends here */
+
+/* right hero section here */
+
+/* animation of hero img */
+/* @keyframes swing {
+  0% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+} */
+
+.hero .rightHero {
+  position: absolute;
+  top: -10%;
+  left: 45%;
+  z-index: 999;
+}
+
+.hero .rightHero img {
+  margin-top: 18vh;
+  margin-left: 10vh;
+  width: 40em;
+  transform: rotate(-25deg);
+  filter: drop-shadow(30px 45px 40px #161616);
+  /* ani
+  .hermation: swing ease-in-out 1s infinite alternate; */
+}
+
+/* right hero section ends here */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+  .hero .rightHero {
+    display: none;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .hero .rightHero {
+    top: 10%;
+  }
+
+  .hero .rightHero img {
+    width: 30em;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1150px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero .rightHero {
+    top: 10%;
+    left: 35%;
+  }
+
+  .hero .leftHero p {
+    margin: 2em auto 3em auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
