@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 
 // Navbar Component
-const Navbar = () => {
+const Navbar = ({ handleInputChange, query }) => {
   const [navbar] = useState(false);
 
  
@@ -35,7 +35,7 @@ const Navbar = () => {
                </li>
                 <li>
            
-            <Link to='/kids-shoe'>KIds</Link>         
+            <Link to='/kids-shoe'>Kids</Link>         
                    </li>
               </ul>
             </div>
@@ -47,7 +47,13 @@ const Navbar = () => {
                   <FaSearch />
                 </div>
 
-                <input type="text" className="search" placeholder="Search..." />
+                <input
+          className="search"
+          type="text"
+          onChange={handleInputChange}
+          value={query}
+          placeholder="Search"
+        />
                 <button
                   className="nav-btn"
                   onClick={() => {

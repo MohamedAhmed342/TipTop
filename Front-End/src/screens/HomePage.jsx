@@ -235,6 +235,7 @@ const HomePage = () => {
 
 
 
+
         <div class="services">
           <h1>
             our<span>services</span>
@@ -310,7 +311,7 @@ const HomePage = () => {
             </div>
 
             <div class="tag">
-              <h1>Follw Us</h1>
+              <h1>Follow Us</h1>
               <div class="social_link">
                 <a href="#">
                   <i class="fa-brands fa-facebook-f"></i>
