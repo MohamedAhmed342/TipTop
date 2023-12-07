@@ -11,14 +11,10 @@ const SignUp = () => {
     <div className="bodyy">
     <div className="wrapper">
       <form action="">
-        <h1>TipTop Store</h1>
-        <h4>Create an Account</h4>
+        {/* <h1>TipTop Store</h1> */}
+        <h1>Sign Up</h1>
         <div className="input-box">
-          <input type="text" placeholder="First name" required/>
-          <FaUser className="icon"/>
-        </div>
-        <div className="input-box">
-          <input type="text" placeholder="Last name" required/>
+          <input type="text" placeholder="Full Name" required/>
           <FaUser className="icon"/>
         </div>
         <div className="input-box">
