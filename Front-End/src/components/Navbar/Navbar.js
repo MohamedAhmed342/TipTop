@@ -1,6 +1,6 @@
 import logo from "../assets/logo.png";
 import "./Navbar.css";
-import { FaCartPlus, FaSearch } from "react-icons/fa";
+import { FaCartPlus, FaSearch,FaUserCircle } from "react-icons/fa";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
@@ -48,7 +48,6 @@ const Navbar = () => {
                 </div>
 
                 <input type="text" className="search" placeholder="Search..." />
-                
                 <button
                   className="nav-btn"
                   onClick={() => {
@@ -65,6 +64,25 @@ const Navbar = () => {
                 >
                   <FaCartPlus />
                 </button>
+                <Link to="./signin"> 
+                <button
+                  className="nav-btn" 
+                  onClick={() => {
+                    toast.warn("Login", {
+                      position: "bottom-right",
+                      autoClose: 2000,
+                      hideProgressBar: false,
+                      closeOnClick: true,
+                      pauseOnHover: true,
+                      draggable: true,
+                      theme: "colored",
+                    });
+                  }}
+                >
+                  <FaUserCircle />
+                </button>
+                </Link>
+
               </form>
             </div>
           </div>

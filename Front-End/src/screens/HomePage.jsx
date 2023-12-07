@@ -16,7 +16,7 @@ const HomePage = () => {
         <section className="hero">
           {/* left hero section here */}
           <div className="leftHero">
-            <h1>TipTOp</h1>
+            <h1>TipTop</h1>
             <div className="rating">
               <FaStar />
               <FaStar />
