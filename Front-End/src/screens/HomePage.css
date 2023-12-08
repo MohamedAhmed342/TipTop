@@ -10,6 +10,8 @@
   transform:  skewY(50deg);
   z-index: 0;
   overflow: hidden;
+  scroll-behavior: smooth;
+
 }
 
 .header::after {
@@ -46,9 +48,26 @@
   left: 3%;
 }
 
+.hero .leftHero h2 {
+  letter-spacing: 2px;
+  font-size: 2.1em;
+
+}
 .hero .leftHero h1 {
-  font-size: 3.5em;
-  margin: 0.5em 0;
+font-weight: 1000;
+  font-size: 4.5em;
+  padding: 0;
+  /* margin-top: -20px ; */
+  /* margin-bottom: ; */
+  /* margin: 0.5em 0; */
+}
+.hero .leftHero .shoes {
+font-weight: 1000;
+  font-size: 4.5em;
+  padding: 0;
+  margin-top: -35px ;
+  /* margin-bottom: ; */
+  /* margin: 0.5em 0; */
 }
 
 .hero .leftHero .rating {
@@ -57,11 +76,22 @@
 
 .hero .leftHero p {
   color: white  ;
-  letter-spacing: 2px;
-  line-height: 25px;
-  font-size: 0.9em;
+  /* letter-spacing: 2px; */
+  /* line-height: 25px; */
+  font-size: 1.5em;
+  font-weight: 2000;
   margin: 2em 0 3em 0;
-  max-width: 40em;
+  max-width: 30em;
+}
+.hero .leftHero .title {
+  color: white  ;
+  font-size: .65em;
+
+  /* letter-spacing: 2px; */
+  line-height: 25px;
+  /* font-size: 0.9em; */
+margin-top: -1px;
+  max-width: 80em;
 }
 
 .hero .leftHero .btn {
@@ -71,8 +101,9 @@ color: white;
   background: linear-gradient(to right,#e71fc4, #9b3cee);
   border-radius: 3em;
   letter-spacing: 1px;
-  font-size: 1em;
+  font-size: 1.4em;
   transition: 0.3s;
+  /* margin-left: 10px; */
 }
 
 .hero .leftHero .btn:hover {
