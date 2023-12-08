@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const morgan = require("morgan");
 dotenv.config({ path: "config.env" });
 const dbConnection = require("./config/database");
+
 const categoryRoute = require("./routes/categoryRoute");
 
 //connect with db
