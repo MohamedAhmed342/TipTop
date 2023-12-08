@@ -7,6 +7,7 @@ const ApiError = require("./utils/apiError");
 const globalError = require("./middlewares/errorMiddleware");
 const dbConnection = require("./config/database");
 const categoryRoute = require("./routes/categoryRoute");
+const User = require("./models/userModel");
 
 //connect with db
 dbConnection();
