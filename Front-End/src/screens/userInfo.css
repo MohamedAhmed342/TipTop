@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyy{
+    font-family: 'Poppins',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url('../components/assets/s.jpg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+
+/* UserProfile.css */
+
+.user-profile {
+    width: 420px;
+    text-align: center;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+  }
+  
+  .avatar-container {
+    margin-right: 20px;
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    margin: 20px;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+  
+  .icon {
+    margin-right: 40px;
+  }
+  
+  .info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .username {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  
+  .email,
+  .address,
+  .phone {
+    margin: 0;
+    color: #f0f0f0;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+  
+  .avatar-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .avatar-button:hover {
+    background-color: #2980b9;
+  }

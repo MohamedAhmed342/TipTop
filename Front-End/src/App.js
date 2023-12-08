@@ -6,6 +6,7 @@ import MenPage from "./screens/MenPage"
 import WomenPage from "./screens/WomenPage"
 import KidsPage from "./screens/KidsPage"
 import NotFounded from "./screens/NotFounded"
+import UserInfo from "./screens/userInfo"
 
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import SignIn from "./components/auth/SignIn";
@@ -26,7 +27,8 @@ function App() {
       <Route path="/signin" element={<SignIn></SignIn >}></Route>
       <Route path="/men-shoe/signup" element={<SignIn></SignIn >}></Route>
       <Route path="/signup" element={<SignUp></SignUp >}></Route>
-      <Route path="*" element={<NotFounded></NotFounded >}></Route>
+      <Route path="/userprofile" element={<UserInfo></UserInfo >}></Route>
+      {/* <Route path="*" element={<NotFounded></NotFounded >}></Route> */}
 
       </Routes>
       
