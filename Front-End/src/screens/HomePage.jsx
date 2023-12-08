@@ -16,21 +16,26 @@ const HomePage = () => {
         <section className="hero">
           {/* left hero section here */}
           <div className="leftHero">
-            <h1>TipTop</h1>
-            <div className="rating">
+            <h2>NEW COLLECTION </h2>
+            <h1>BEST</h1>
+            <h1 className="shoes">SHOES</h1>
+            {/* <div className="rating">
               <FaStar />
               <FaStar />
               <FaStar />
               <FaStar />
               <FaStarHalfAlt />
-            </div>
+            </div> */}
+            <p  className="title">
+            OUR CHOICE OF MEN'S AND WOWEN AND KIDS RUNNING TRAINERS
+
+            </p>
+            <br></br>
             <p>
-              The TIpTop is one of those classic tennis shoes that made it
-              through summer and winter no matter the weather. First appeared in
-              1976 as a prototype test-version with a release later in 1977
+            The TipTop is one of those classic tennis shoes and we offering the best level of comfort, style , and attention to detail for years.
             </p>
             <a href="/men-shoe" className="btn">
-              Buy Now
+              Shop Now
             </a>
           </div>
           {/* right hero section here */}
@@ -71,10 +76,11 @@ const HomePage = () => {
               </div>
               <div class="comment">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Debitis, amet nesciunt voluptatem cum architecto ipsum vero
-                  nulla voluptatibus dolorum modi assumenda eum? Aliquid
-                  inventore velit ipsa repellat numquam atque dolores!
+                I love my new running shoes! They're so comfortable and provide excellent support. The quality is top-notch, and they look great too. Highly recommend!"
+                    
+
+
+                    
                 </p>
               </div>
             </div>
@@ -101,10 +107,7 @@ const HomePage = () => {
               </div>
               <div class="comment">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Debitis, amet nesciunt voluptatem cum architecto ipsum vero
-                  nulla voluptatibus dolorum modi assumenda eum? Aliquid
-                  inventore velit ipsa repellat numquam atque dolores!
+                These sandals are a game-changer! Super comfortable for long walks, and the design is trendy. The sizing was accurate
                 </p>
               </div>
             </div>
@@ -131,10 +134,7 @@ const HomePage = () => {
               </div>
               <div class="comment">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Debitis, amet nesciunt voluptatem cum architecto ipsum vero
-                  nulla voluptatibus dolorum modi assumenda eum? Aliquid
-                  inventore velit ipsa repellat numquam atque dolores!
+                I needed to exchange a pair due to sizing, and the return process was a breeze. Hassle-free returns and excellent customer support.
                 </p>
               </div>
             </div>
@@ -163,10 +163,7 @@ const HomePage = () => {
               </div>
               <div class="comment">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Debitis, amet nesciunt voluptatem cum architecto ipsum vero
-                  nulla voluptatibus dolorum modi assumenda eum? Aliquid
-                  inventore velit ipsa repellat numquam atque dolores!
+                Found the perfect pair of formal shoes for a special occasion. The craftsmanship is exceptional, and they added a touch of elegance to my outfit
                 </p>
               </div>
             </div>
@@ -193,10 +190,7 @@ const HomePage = () => {
               </div>
               <div class="comment">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Debitis, amet nesciunt voluptatem cum architecto ipsum vero
-                  nulla voluptatibus dolorum modi assumenda eum? Aliquid
-                  inventore velit ipsa repellat numquam atque dolores!
+                Had a fantastic experience with customer service. They were quick to respond to my questions and resolved an issue with my order promptly.
                 </p>
               </div>
             </div>
@@ -223,10 +217,7 @@ const HomePage = () => {
               </div>
               <div class="comment">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Debitis, amet nesciunt voluptatem cum architecto ipsum vero
-                  nulla voluptatibus dolorum modi assumenda eum? Aliquid
-                  inventore velit ipsa repellat numquam atque dolores!
+                Love the frequent promotions! I got a great deal on a high-quality pair of shoes. The affordability without compromising on quality is what keeps me coming back.
                 </p>
               </div>
             </div>
@@ -245,19 +236,28 @@ const HomePage = () => {
             <div class="services_box">
               <i class="fa-solid fa-truck-fast"></i>
               <h3>Fast Delivery</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+             <br/>
+             <br/>
+             <br/>
+             <br/>
             </div>
 
             <div class="services_box">
               <i class="fa-solid fa-rotate-left"></i>
               <h3>10 Days Replacement</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            </div>
+              <br/>           
+              <br/>           
+              <br/>           
+              <br/>           
+               </div>
 
             <div class="services_box">
               <i class="fa-solid fa-headset"></i>
               <h3>24 x 7 Support</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <br/> 
+              <br/> 
+              <br/> 
+              <br/> 
             </div>
           </div>
         </div>
@@ -296,16 +296,16 @@ const HomePage = () => {
 
             <div class="tag">
               <h1>Our Stores</h1>
-              <a href="#" class="center">
+              <a class="center">
                 Sri Lanka
               </a>
-              <a href="#" class="center">
+              <a class="center">
                 USA
               </a>
-              <a href="#" class="center">
+              <a  class="center">
                 India
               </a>
-              <a href="#" class="center">
+              <a  class="center">
                 Japan
               </a>
             </div>
