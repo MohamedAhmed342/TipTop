@@ -430,3 +430,30 @@ footer .footer_main .tag .search_bar button {
     margin: 2em auto 3em auto;
   }
 }
+/**/
+.smallimages  .iman {
+width: 20%;
+position: relative;
+bottom: 150px;
+border-radius: 100px;
+margin-right: 5%;
+margin-left:  5%;
+}
+.smallimages  .iwoman {
+  width: 20%;
+  position: relative;
+  bottom: 150px;
+  border-radius: 100px;
+  margin-right: 5%;
+  margin-left:  5%;
+  
+}
+  .smallimages  .ikid {
+    width: 20%;
+    position: relative;
+    bottom: 150px;
+    border-radius: 100px;
+    margin-right: 5%;
+    margin-left:  5%;
+    
+  }
