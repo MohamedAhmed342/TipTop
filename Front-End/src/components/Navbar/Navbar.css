@@ -5,12 +5,22 @@ nav {
   color: #fff;
   background-color: transparent;
   z-index: 9999999;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  
+}
+
+nav:hover{
+
+  border-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav.active {
   backdrop-filter: blur(4px) saturate(72%);
   -webkit-backdrop-filter: blur(4px) saturate(72%);
-  background-color: rgba(17, 25, 40, 0.12);
+  background-color: rgba(0, 0, 0, 0.976);
 }
 
 nav a,
@@ -122,6 +132,7 @@ nav form input::placeholder {
 nav .container .menu-btn {
   display: none;
 }
+
 
 /* MEDIA QUERIES */
 
