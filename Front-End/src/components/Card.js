@@ -1,4 +1,5 @@
 import { BsFillBagFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
   return (
@@ -15,9 +16,12 @@ const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
             <div className="price">
               <del>{prevPrice}</del> {newPrice}
             </div>
+
+            <Link to="./signup">
             <div className="bag">
               <BsFillBagFill className="bag-icon" />
             </div>
+            </Link>
           </section>
         </div>
       </section>
