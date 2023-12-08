@@ -10,7 +10,6 @@
   z-index: 0;
   overflow: hidden;
   scroll-behavior: smooth;
-
 }
 
 .header::after {
@@ -49,10 +48,9 @@
 .hero .leftHero h2 {
   letter-spacing: 2px;
   font-size: 2.1em;
-
 }
 .hero .leftHero h1 {
-font-weight: 1000;
+  font-weight: 1000;
   font-size: 4.5em;
   padding: 0;
   /* margin-top: -20px ; */
@@ -60,10 +58,10 @@ font-weight: 1000;
   /* margin: 0.5em 0; */
 }
 .hero .leftHero .shoes {
-font-weight: 1000;
+  font-weight: 1000;
   font-size: 4.5em;
   padding: 0;
-  margin-top: -35px ;
+  margin-top: -35px;
   /* margin-bottom: ; */
   /* margin: 0.5em 0; */
 }
@@ -73,8 +71,8 @@ font-weight: 1000;
 }
 
 .hero .leftHero p {
-/*  Updated upstream*/
-  color: white  ;
+  /*  Updated upstream*/
+  color: white;
   /* letter-spacing: 2px; */
   /* line-height: 25px; */
   font-size: 1.5em;
@@ -84,18 +82,18 @@ font-weight: 1000;
   letter-spacing: 2px;
   line-height: 25px;
   font-size: 0.9em;
-/* Stashed changes*/
+  /* Stashed changes*/
   margin: 2em 0 3em 0;
   max-width: 30em;
-} 
+}
 .hero .leftHero .title {
-  color: white  ;
-  font-size: .65em;
+  color: white;
+  font-size: 0.65em;
 
   /* letter-spacing: 2px; */
   line-height: 25px;
   /* font-size: 0.9em; */
-margin-top: -1px;
+  margin-top: -1px;
   max-width: 80em;
 }
 
@@ -431,29 +429,36 @@ footer .footer_main .tag .search_bar button {
   }
 }
 /**/
-.smallimages  .iman {
-width: 20%;
-position: relative;
-bottom: 150px;
-border-radius: 100px;
-margin-right: 5%;
-margin-left:  5%;
-}
-.smallimages  .iwoman {
+.smallimages .iman {
   width: 20%;
   position: relative;
   bottom: 150px;
   border-radius: 100px;
   margin-right: 5%;
-  margin-left:  5%;
-  
+  margin-left: 5%;
 }
-  .smallimages  .ikid {
-    width: 20%;
-    position: relative;
-    bottom: 150px;
-    border-radius: 100px;
-    margin-right: 5%;
-    margin-left:  5%;
-    
-  }
+.smallimages .iwoman {
+  width: 20%;
+  position: relative;
+  bottom: 150px;
+  border-radius: 100px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.smallimages .ikid {
+  width: 20%;
+  position: relative;
+  bottom: 150px;
+  border-radius: 100px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.smallimages .iman:hover {
+  opacity: 0.7;
+}
+.smallimages .iwoman:hover {
+  opacity: 0.7;
+}
+.smallimages .ikid:hover {
+  opacity: 0.7;
+}
