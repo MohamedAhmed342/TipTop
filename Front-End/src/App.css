@@ -60,6 +60,10 @@ header::after {
   color: #000000; /* Change the text color on hover */
 }
 
+/* NotFound.css */
+
+
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1150px) {
   header::before {
