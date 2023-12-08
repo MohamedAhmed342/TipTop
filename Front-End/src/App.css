@@ -34,6 +34,35 @@ header::after {
   font-weight: 700;
   z-index: 0;
 }
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+/* Style for a valid input (optional) */
+.valid-input {
+  border: 1px solid green;
+}
+.remember-forgot .reset-pass{
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: #ffffff; /* Set the text color to white or your desired color */
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 180px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+.remember-forgot .reset-pass:hover{
+
+  background-color: #ffffff; /* Change the background color on hover */
+  border-color: #ffffff; /* Change the border color on hover */
+  color: #000000; /* Change the text color on hover */
+}
+
+/* NotFound.css */
+
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1150px) {
