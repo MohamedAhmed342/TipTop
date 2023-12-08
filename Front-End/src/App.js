@@ -7,6 +7,8 @@ import WomenPage from "./screens/WomenPage"
 import KidsPage from "./screens/KidsPage"
 
 import {BrowserRouter, Route, Routes} from "react-router-dom"
+import SignIn from "./components/auth/SignIn";
+import SignUp from "./components/auth/SignUp";
  
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
       <Route path="/men-shoe" element={<MenPage></MenPage>}></Route>
       <Route path="/women-shoe" element={<WomenPage></WomenPage>}></Route> 
       <Route path="/kids-shoe" element={<KidsPage></KidsPage>}></Route> 
+      <Route path="/signin" element={<SignIn></SignIn >}></Route>
+      <Route path="/signup" element={<SignUp></SignUp >}></Route>
+
       </Routes>
       
       </BrowserRouter>

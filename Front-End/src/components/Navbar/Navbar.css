@@ -110,6 +110,7 @@ nav form input::placeholder {
   border: none;
   outline: none;
   cursor: pointer;
+  margin: 4px;
   transition: 0.3s;
   animation: swing ease-in-out 1s infinite alternate;
 }
