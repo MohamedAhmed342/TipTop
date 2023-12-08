@@ -45,3 +45,45 @@ process.on("unhandledRejection", (err) => {
     process.exit(1);
   });
 });
+
+
+// Register 
+app.post('/register', async (req, res) => {
+  try {
+    const { username, address ,email ,password ,phoneNumber } = req.body;
+
+    const findEmail = await User.findOne({ email });
+    if (findEmail) {
+      return res.status(400).json({ error: 'Email is already taken' });
+    }
+
+    const newUser = new User({ username, address ,email ,password ,phoneNumber});
+
+    await newUser.save();
+
+    res.json({ message: 'User registered successfully' });
+  } catch (error) {
+    res.status(500).json({ error: 'Internal Server Error' });
+    console.log(error)
+  }
+});
+
+//Log in
+app.post('/login', async (req, res) => {
+  try {
+    const { username, password } = req.body;
+    const user = await User.findOne({ username });
+    if (!user) {
+      return res.status(401).json({ error: 'Invalid username or password' });
+    }
+
+    if (password != user.password) {
+      return res.status(401).json({ error: 'Invalid username or password' });
+    }
+
+    res.json({ message: 'Login successful', username });
+  } catch (error) {
+    console.error('Error during login:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});

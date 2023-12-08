@@ -10,6 +10,7 @@ const categorySchema = new mongoose.Schema(
       minlength: [3, "Too Short Category Name"],
       maxlength: [32, "Too Long Category Name"],
     },
+    typecategorey: String,
     //A And B ==> shopping.com/a-and-b
     slug: {
       type: String,
