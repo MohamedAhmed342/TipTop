@@ -18,7 +18,9 @@ const Navbar = ({ handleInputChange, query }) => {
       <nav className={navbar ? "active" : ""}>
         <div className="container">
           <div>
+            <a href="/">
             <img src={logo} alt="" className="logo" />
+            </a>
             <div className="menu">
               <ul>
                 <li>

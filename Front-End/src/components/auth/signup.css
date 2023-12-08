@@ -123,3 +123,13 @@ code{
 .register-link p a:hover{
     text-decoration: underline;
 }
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  
+  /* Style for a valid input (optional) */
+  .valid-input {
+    border: 1px solid green;
+  }

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from "react";
 
-import Navigation from "../Navigation/Nav";
 import Products from "../Products/Products";
 import products from "../db/data";
 import Recommended from "../Recommended/Recommended";

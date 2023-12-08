@@ -23,6 +23,7 @@ function App() {
       <Route path="/women-shoe" element={<WomenPage></WomenPage>}></Route> 
       <Route path="/kids-shoe" element={<KidsPage></KidsPage>}></Route> 
       <Route path="/signin" element={<SignIn></SignIn >}></Route>
+      <Route path="/men-shoe/signup" element={<SignIn></SignIn >}></Route>
       <Route path="/signup" element={<SignUp></SignUp >}></Route>
 
       </Routes>
