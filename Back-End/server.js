@@ -1,9 +1,11 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const morgan = require("morgan");
-dotenv.config({ path: "config.env" });
-const dbConnection = require("./config/database");
 
+dotenv.config({ path: "config.env" });
+const ApiError = require("./utils/apiError");
+const globalError = require("./middlewares/errorMiddleware");
+const dbConnection = require("./config/database");
 const categoryRoute = require("./routes/categoryRoute");
 
 //connect with db
@@ -21,6 +23,13 @@ if (process.env.NODE_ENV == "development") {
 
 // Mount Routes
 app.use("/api/v1/categories", categoryRoute);
+
+app.all("*", (req, res, next) => {
+  next(new ApiError(`Can't find this routs: ${req.originalUrl}`, 400));
+});
+
+//Global error handling middleware
+app.use(globalError);
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
