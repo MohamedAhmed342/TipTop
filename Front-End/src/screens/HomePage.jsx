@@ -12,7 +12,7 @@ import womanshoes from "../components/assets/woman.jpg";
 import kidshoes from "../components/assets/kid.jpg";
 
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -31,13 +31,14 @@ const HomePage = () => {
               <FaStar />
               <FaStarHalfAlt />
             </div> */}
-            <p  className="title">
-            OUR CHOICE OF MEN'S AND WOWEN AND KIDS RUNNING TRAINERS
-
+            <p className="title">
+              OUR CHOICE OF MEN'S AND WOWEN AND KIDS RUNNING TRAINERS
             </p>
             <br></br>
             <p>
-            The TipTop is one of those classic tennis shoes and we offering the best level of comfort, style , and attention to detail for years.
+              The TipTop is one of those classic tennis shoes and we offering
+              the best level of comfort, style , and attention to detail for
+              years.
             </p>
             <a href="/men-shoe" className="btn">
               Shop Now
@@ -49,9 +50,10 @@ const HomePage = () => {
           </div>
         </section>
         <section>
-          <div className="smallimages">
+          {/* <div className="smallimages">
             <NavLink to="/men-shoe">
               <img className="iman" src={kidshoes} alt="for men" />
+              <button class="overlay-button">Click me</button>
             </NavLink>
             <NavLink to="/women-shoe">
               <img className="iwoman" src={kidshoes} alt="for women" />
@@ -59,6 +61,37 @@ const HomePage = () => {
             <NavLink to="/kids-shoe">
               <img className="ikid" src={kidshoes} alt="for kids" />
             </NavLink>
+          </div> */}
+          <div>
+            <Link className="image-container" to="/men-shoe">
+              <img className="iman" src={kidshoes} alt="for men" />
+              <span className="tex">
+                Shoes For Men OF All Types, Sizes, Colors And Various Brands
+              </span>
+              <div className="overlay">
+                <button className="overlay-button">Enjoy</button>
+              </div>
+            </Link>
+
+            <Link className="image-container" to="/women-shoe">
+              <img className="iman" src={kidshoes} alt="for men" />
+              <span className="tex">
+                Shoes For Women OF All Types, Sizes, Colors And Various Brands
+              </span>
+              <div className="overlay">
+                <button className="overlay-button">Enjoy</button>
+              </div>
+            </Link>
+
+            <Link className="image-container" to="/kids-shoe">
+              <img className="iman" src={kidshoes} alt="for men" />
+              <span className="tex">
+                Shoes For Kids OF All Types, Sizes, Colors And Various Brands
+              </span>
+              <div className="overlay">
+                <button className="overlay-button">Enjoy</button>
+              </div>
+            </Link>
           </div>
         </section>
 
@@ -90,11 +123,9 @@ const HomePage = () => {
               </div>
               <div class="comment">
                 <p>
-                I love my new running shoes! They're so comfortable and provide excellent support. The quality is top-notch, and they look great too. Highly recommend!"
-                    
-
-
-                    
+                  I love my new running shoes! They're so comfortable and
+                  provide excellent support. The quality is top-notch, and they
+                  look great too. Highly recommend!"
                 </p>
               </div>
             </div>
@@ -121,7 +152,8 @@ const HomePage = () => {
               </div>
               <div class="comment">
                 <p>
-                These sandals are a game-changer! Super comfortable for long walks, and the design is trendy. The sizing was accurate
+                  These sandals are a game-changer! Super comfortable for long
+                  walks, and the design is trendy. The sizing was accurate
                 </p>
               </div>
             </div>
@@ -148,7 +180,9 @@ const HomePage = () => {
               </div>
               <div class="comment">
                 <p>
-                I needed to exchange a pair due to sizing, and the return process was a breeze. Hassle-free returns and excellent customer support.
+                  I needed to exchange a pair due to sizing, and the return
+                  process was a breeze. Hassle-free returns and excellent
+                  customer support.
                 </p>
               </div>
             </div>
@@ -177,7 +211,9 @@ const HomePage = () => {
               </div>
               <div class="comment">
                 <p>
-                Found the perfect pair of formal shoes for a special occasion. The craftsmanship is exceptional, and they added a touch of elegance to my outfit
+                  Found the perfect pair of formal shoes for a special occasion.
+                  The craftsmanship is exceptional, and they added a touch of
+                  elegance to my outfit
                 </p>
               </div>
             </div>
@@ -204,7 +240,9 @@ const HomePage = () => {
               </div>
               <div class="comment">
                 <p>
-                Had a fantastic experience with customer service. They were quick to respond to my questions and resolved an issue with my order promptly.
+                  Had a fantastic experience with customer service. They were
+                  quick to respond to my questions and resolved an issue with my
+                  order promptly.
                 </p>
               </div>
             </div>
@@ -231,7 +269,9 @@ const HomePage = () => {
               </div>
               <div class="comment">
                 <p>
-                Love the frequent promotions! I got a great deal on a high-quality pair of shoes. The affordability without compromising on quality is what keeps me coming back.
+                  Love the frequent promotions! I got a great deal on a
+                  high-quality pair of shoes. The affordability without
+                  compromising on quality is what keeps me coming back.
                 </p>
               </div>
             </div>
@@ -247,28 +287,28 @@ const HomePage = () => {
             <div class="services_box">
               <i class="fa-solid fa-truck-fast"></i>
               <h3>Fast Delivery</h3>
-             <br/>
-             <br/>
-             <br/>
-             <br/>
+              <br />
+              <br />
+              <br />
+              <br />
             </div>
 
             <div class="services_box">
               <i class="fa-solid fa-rotate-left"></i>
               <h3>10 Days Replacement</h3>
-              <br/>           
-              <br/>           
-              <br/>           
-              <br/>           
-               </div>
+              <br />
+              <br />
+              <br />
+              <br />
+            </div>
 
             <div class="services_box">
               <i class="fa-solid fa-headset"></i>
               <h3>24 x 7 Support</h3>
-              <br/> 
-              <br/> 
-              <br/> 
-              <br/> 
+              <br />
+              <br />
+              <br />
+              <br />
             </div>
           </div>
         </div>
@@ -306,18 +346,10 @@ const HomePage = () => {
 
             <div class="tag">
               <h1>Our Stores</h1>
-              <a class="center">
-                Sri Lanka
-              </a>
-              <a class="center">
-                USA
-              </a>
-              <a  class="center">
-                India
-              </a>
-              <a  class="center">
-                Japan
-              </a>
+              <a class="center">Sri Lanka</a>
+              <a class="center">USA</a>
+              <a class="center">India</a>
+              <a class="center">Japan</a>
             </div>
 
             <div class="tag">

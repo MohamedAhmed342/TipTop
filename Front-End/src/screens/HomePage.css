@@ -429,7 +429,7 @@ footer .footer_main .tag .search_bar button {
   }
 }
 /**/
-.smallimages .iman {
+/* .smallimages .iman {
   width: 20%;
   position: relative;
   bottom: 150px;
@@ -461,4 +461,73 @@ footer .footer_main .tag .search_bar button {
 }
 .smallimages .ikid:hover {
   opacity: 0.7;
+} */
+
+.image-container {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  margin-right: 3%; /*Add some spacing between image containers  */
+  margin-left: 3%;
+  width: 25%;
+  /* height: 20%; */
+}
+
+/* Your regular styling for the image */
+.image-container .iman {
+  width: 100%;
+  position: relative;
+  bottom: 120px;
+  border-radius: 100px;
+
+  /* transition: opacity 0.7s ease; Add a smooth transition effect for opacity changes */
+}
+.tex{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: wheat;
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+
+.overlay {
+  position: absolute;
+  top: 25%;
+  left: 42%;
+  width: fit-content;
+  height: 2%;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  /*background-color: rgba(52,152,219,0.7); /* Semi-transparent background color */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect for opacity changes */
+}
+.overlay-button {
+  display: block;
+  padding: 10px 15px;
+  background-color:blueviolet; /* Set your button background color */
+  color: #fff; /* Set your button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  opacity: 1; /* Initially visible */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect for opacity changes */
+}
+
+
+/* Show overlay elements on hover */
+.image-container:hover .iman {
+  opacity: 0.6;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+.image-container:hover .overlay-button,
+.image-container:hover .overlay-text {
+  opacity: 1;
 }
