@@ -7,7 +7,12 @@ import girl3 from "../components/assets/girl_dp1.jpg";
 import man from "../components/assets/man_dp1.jpg";
 import man2 from "../components/assets/man_dp2.jpg";
 import man3 from "../components/assets/man_dp3.jpg";
+import manshoes from "../components/assets/man4.jpg";
+import womanshoes from "../components/assets/woman.jpg";
+import kidshoes from "../components/assets/kid.jpg";
+
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -43,10 +48,19 @@ const HomePage = () => {
             <img src={hero} alt="Adidas Forest Hill" />
           </div>
         </section>
-
-        
-
-
+        <section>
+          <div className="smallimages">
+            <NavLink to="/men-shoe">
+              <img className="iman" src={kidshoes} alt="for men" />
+            </NavLink>
+            <NavLink to="/women-shoe">
+              <img className="iwoman" src={kidshoes} alt="for women" />
+            </NavLink>
+            <NavLink to="/kids-shoe">
+              <img className="ikid" src={kidshoes} alt="for kids" />
+            </NavLink>
+          </div>
+        </section>
 
         <div class="review" id="Review">
           <h1>
@@ -224,9 +238,6 @@ const HomePage = () => {
           </div>
         </div>
 
-
-
-
         <div class="services">
           <h1>
             our<span>services</span>
@@ -261,7 +272,6 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-
 
         <footer>
           <div class="footer_main">
@@ -327,8 +337,6 @@ const HomePage = () => {
                 </a>
               </div>
             </div>
-
-            
           </div>
         </footer>
       </div>
