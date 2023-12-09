@@ -134,6 +134,26 @@ nav .container .menu-btn {
 }
 
 
+.number-quintity  span {
+  position: absolute;
+  top: 45px;
+  right:190 px;
+  /* background: #123; */
+  font-size: 15px;
+  font-weight: 1000;
+  padding: 3px 5px;
+  border-radius: 50%;
+  /* z-index: -1; */
+  display: inline-block;
+  width: 20px; /* Adjust the width of the circle */
+  height: 20px; /* Adjust the height of the circle */
+  background-color: #ffffff; 
+  color: #e71fc4; /* Adjust the text color */
+  text-align: center;
+  line-height: 16px; /* Should be equal to the height for vertical centering */
+}
+
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 930px) {

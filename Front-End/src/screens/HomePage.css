@@ -1,3 +1,8 @@
+
+*{
+  scroll-behavior: smooth;
+
+}
 .header::before {
   content: "";
   position: absolute;
@@ -462,9 +467,15 @@ footer .footer_main .tag .search_bar button {
 .smallimages .ikid:hover {
   opacity: 0.7;
 } */
+.cardd{
+  background-color: #f3f1f1;
+  scroll-behavior: smooth;
 
+}
 .image-container {
+  margin-top: 300px;
   position: relative;
+  /* height:50px ; */
   width: fit-content;
   display: inline-block;
   margin-right: 3%; /*Add some spacing between image containers  */
@@ -475,10 +486,11 @@ footer .footer_main .tag .search_bar button {
 
 /* Your regular styling for the image */
 .image-container .iman {
+  height: 50vh;
   width: 100%;
   position: relative;
   bottom: 120px;
-  border-radius: 100px;
+  /* border-radius: 100px; */
 
   /* transition: opacity 0.7s ease; Add a smooth transition effect for opacity changes */
 }
@@ -508,9 +520,13 @@ footer .footer_main .tag .search_bar button {
 .overlay-button {
   display: block;
   padding: 10px 15px;
+  margin-left: -40px;
+  /* margin-right:px; */
   background-color:blueviolet; /* Set your button background color */
   color: #fff; /* Set your button text color */
   border: none;
+  display: flex;
+  /* justify-self: center; */
   border-radius: 5px;
   cursor: pointer;
   font-size: 24px;

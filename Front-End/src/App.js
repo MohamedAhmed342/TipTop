@@ -6,15 +6,17 @@ import MenPage from "./screens/MenPage"
 import WomenPage from "./screens/WomenPage"
 import KidsPage from "./screens/KidsPage"
 import NotFounded from "./screens/NotFounded"
-
+import CartPage from "./screens/CartPage";
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
- 
+import ShopingCartProvider from "./context/ShopingCartContext";
+
 
 function App() {
   return (
     <div className="App">
+       <ShopingCartProvider>
       <BrowserRouter>
 
       <Navbar />
@@ -27,11 +29,13 @@ function App() {
       <Route path="/men-shoe/signup" element={<SignIn></SignIn >}></Route>
       <Route path="/signup" element={<SignUp></SignUp >}></Route>
       <Route path="*" element={<NotFounded></NotFounded >}></Route>
+      <Route path="/cart" element={<CartPage />} />
+
 
       </Routes>
       
       </BrowserRouter>
-   
+   </ShopingCartProvider>
     </div>
   );
 }

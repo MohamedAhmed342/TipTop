@@ -54,9 +54,10 @@ function MenPage() {
       }
   
       return filteredProducts.map(
-        ({ img, title, star, reviews, prevPrice, newPrice }) => (
+        ({id, img, title, star, reviews, prevPrice, newPrice }) => (
           <Card
-            key={Math.random()}
+          key={id}
+          id={id}
             img={img}
             title={title}
             star={star}

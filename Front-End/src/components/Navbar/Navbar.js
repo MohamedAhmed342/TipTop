@@ -13,6 +13,8 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import { useUIContext } from "../context/";
+import { useShopingCart } from "../../context/ShopingCartContext";
+
 
 
 // Navbar Component
@@ -21,6 +23,8 @@ const Navbar = ({ handleInputChange, query }) => {
   const [auth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const { setDrawerOpen, setShowSearchBox } = useUIContext();
+  const { getNumberOfAllItems } = useShopingCart();
+  const quantity = getNumberOfAllItems();
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -73,23 +77,27 @@ const Navbar = ({ handleInputChange, query }) => {
           value={query}
           placeholder="Search"
         />
-                <button
-                  className="nav-btn"
-                  onClick={() => {
-                    toast.warn("Cart is Empty BUY NOW !", {
-                      position: "bottom-right",
-                      autoClose: 2000,
-                      hideProgressBar: false,
-                      closeOnClick: true,
-                      pauseOnHover: true,
-                      draggable: true,
-                      theme: "colored",
-                    });
-                  }}
-                >
-                  <FaCartPlus />
-                </button>
-
+        <div className="number-quintity">
+                <Link to="/cart">
+                  <span>{quantity}</span>
+                  <button
+                    className="nav-btn"
+                    onClick={() => {
+                      toast.warn("Cart is Empty BUY NOW !", {
+                        position: "bottom-right",
+                        autoClose: 2000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        theme: "colored",
+                      });
+                    }}
+                  >
+                    <FaCartPlus />
+                  </button>
+                </Link>
+                </div>
 
                 {auth && (
             <div>

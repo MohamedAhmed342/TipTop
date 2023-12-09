@@ -49,27 +49,17 @@ const HomePage = () => {
             <img src={hero} alt="Adidas Forest Hill" />
           </div>
         </section>
-        <section>
-          {/* <div className="smallimages">
-            <NavLink to="/men-shoe">
-              <img className="iman" src={kidshoes} alt="for men" />
-              <button class="overlay-button">Click me</button>
-            </NavLink>
-            <NavLink to="/women-shoe">
-              <img className="iwoman" src={kidshoes} alt="for women" />
-            </NavLink>
-            <NavLink to="/kids-shoe">
-              <img className="ikid" src={kidshoes} alt="for kids" />
-            </NavLink>
-          </div> */}
-          <div>
+
+        <section className="cardd">
+       
+          <div >
             <Link className="image-container" to="/men-shoe">
               <img className="iman" src={kidshoes} alt="for men" />
               <span className="tex">
                 Shoes For Men OF All Types, Sizes, Colors And Various Brands
               </span>
               <div className="overlay">
-                <button className="overlay-button">Enjoy</button>
+                <button className="overlay-button">MEN</button>
               </div>
             </Link>
 
@@ -79,7 +69,7 @@ const HomePage = () => {
                 Shoes For Women OF All Types, Sizes, Colors And Various Brands
               </span>
               <div className="overlay">
-                <button className="overlay-button">Enjoy</button>
+                <button className="overlay-button">WOMEN</button>
               </div>
             </Link>
 
@@ -89,7 +79,7 @@ const HomePage = () => {
                 Shoes For Kids OF All Types, Sizes, Colors And Various Brands
               </span>
               <div className="overlay">
-                <button className="overlay-button">Enjoy</button>
+                <button className="overlay-button">KIDS</button>
               </div>
             </Link>
           </div>

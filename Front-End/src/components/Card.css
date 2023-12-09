@@ -1,0 +1,33 @@
+.card .card-img {
+    width: 18rem;
+    height: 10rem;
+}
+
+.card .btn {
+    text-decoration: none;
+    color: white;
+    padding: 0.7em 0.7em;
+    background: linear-gradient(to right, #e71fc4, #9b3cee);
+    border-radius: 3em;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+.card .btn:hover {
+    background: #6c14d0;
+}
+
+.card .plus,
+.card .mins {
+    color: white;
+    padding: 0.5em 0.7em;
+    background: linear-gradient(to right, #e71fc4, #9b3cee);
+    border-radius: 0.5em;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.card .quantity {
+    padding: 0.5em
+}
