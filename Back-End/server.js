@@ -9,6 +9,10 @@ const dbConnection = require("./config/database");
 const categoryRoute = require("./routes/categoryRoute");
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/user");
+const productRoute = require("./routes/product");
+
+const cartRoute = require("./routes/cart");
+const orderRoute = require("./routes/order");
 
 //connect with db
 dbConnection();
@@ -27,6 +31,9 @@ if (process.env.NODE_ENV == "development") {
 app.use("/api/v1/categories", categoryRoute);
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
+app.use("/api/products", productRoute);
+app.use("/api/carts", cartRoute);
+app.use("/api/orders", orderRoute);
 
 app.all("*", (req, res, next) => {
   next(new ApiError(`Can't find this routs: ${req.originalUrl}`, 400));
