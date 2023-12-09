@@ -4,7 +4,7 @@ import Products from "../Products/Products";
 import products from "../db/data";
 import Recommended from "../Recommended/Recommended";
 import Sidebar from "../Sidebar/Sidebar";
-import Card from "../components/Card";
+import Card from "../components/card/Card";
 import "../screens/MenPage.css";
 import Navbar from '../components/Navbar/Navbar';
 

@@ -8,8 +8,8 @@ import {
   IconButton,
 } from "@mui/material";
 import DeleteForeverRounded from "@mui/icons-material/DeleteForeverRounded";
-import data from "../db/data";
-import { useShopingCart } from "../context/ShopingCartContext";
+import data from "../../db/data";
+import { useShopingCart } from "../../context/ShopingCartContext";
 
 export default function CartItem({ id, quantity }) {
   const { removeItem, getNumberOfAllItems } = useShopingCart();

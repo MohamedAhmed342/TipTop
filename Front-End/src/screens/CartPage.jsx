@@ -1,7 +1,7 @@
 import React from "react";
 import "./CartPage.css";
 import { useShopingCart } from "../context/ShopingCartContext";
-import CartItem from "../components/CartItem";
+import CartItem from "../components/card/CartItem";
 import data from "../db/data";
 import { Card, CardContent, Typography, Button } from "@mui/material";
 

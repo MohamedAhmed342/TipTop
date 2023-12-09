@@ -1,6 +1,6 @@
 
 import "./Card.css";
-import { useShopingCart } from "../context/ShopingCartContext";
+import { useShopingCart } from "../../context/ShopingCartContext";
 const Card = ({ id, img, title, star, reviews, prevPrice, newPrice }) => {
   const { getNumberOfItems, addToCart, deleteFromCart } = useShopingCart();
   const quantity = getNumberOfItems(id);
