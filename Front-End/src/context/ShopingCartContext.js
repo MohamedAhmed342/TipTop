@@ -18,15 +18,9 @@ const ShopingCartProvider = ({ children }) => {
   
   const getConfirm = () => {
     setCartItems([]);
-    // setCartItems((items)=>{
-    //   items.filter((item)=>{
-    //     item != item ;
-    //   })
-    // })
+   
   };
-  // const getTotalPrice = () => {
-  //   return cartItems.reduce((total, item) => total + item.quantity, 0) || 0;
-  // };
+
   const getNumberOfItems = (id) => {
     return cartItems.find((item) => item.id === id)?.quantity || 0;
   };

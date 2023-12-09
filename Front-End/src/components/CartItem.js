@@ -1,17 +1,13 @@
-
 import React from "react";
-import "./CartItem.css";
 import {
   Card,
   CardContent,
   Typography,
   CardActionArea,
   CardMedia,
-  Button,
   IconButton,
 } from "@mui/material";
 import DeleteForeverRounded from "@mui/icons-material/DeleteForeverRounded";
-
 import data from "../db/data";
 import { useShopingCart } from "../context/ShopingCartContext";
 
@@ -23,15 +19,24 @@ export default function CartItem({ id, quantity }) {
   const { img, title, newPrice } = item;
 
   return (
-
     <div className="cart-container">
-     
       <div className="cart-section">
-        
         <div className="cart-history">
-          <Card style={{ backgroundColor:  "transparent", color: 'white', boxShadow: '0 1px 5px #e71fc4' }}>
+          <Card
+            style={{
+              backgroundColor: "transparent",
+              color: "white",
+              boxShadow: "0 1px 5px #e71fc4",
+            }}
+          >
             <CardActionArea className="card-action">
-              <CardMedia component="img" height="150" width="50"  alt={title} image={img} />
+              <CardMedia
+                component="img"
+                height="150"
+                width="50"
+                alt={title}
+                image={img}
+              />
             </CardActionArea>
             <CardContent className="flexing">
               <div className="flex1">
@@ -44,7 +49,7 @@ export default function CartItem({ id, quantity }) {
               </div>
               <div className="flex1">
                 <Typography variant="body2" className="font">
-                  ${newPrice*quantity}
+                  ${newPrice * quantity}
                 </Typography>
                 <Typography variant="body2" className="font">
                   QTY:{quantity}
@@ -52,13 +57,8 @@ export default function CartItem({ id, quantity }) {
               </div>
             </CardContent>
           </Card>
-          
         </div>
-
-      
       </div>
     </div>
   );
 }
-
-

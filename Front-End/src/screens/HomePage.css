@@ -1,8 +1,17 @@
+@keyframes img {
+  from {
+    transform: translateY(5vh);
+  }
 
-*{
-  scroll-behavior: smooth;
-
+  to {
+    transform: translateY(0);
+  }
 }
+
+* {
+  scroll-behavior: smooth;
+}
+
 .header::before {
   content: "";
   position: absolute;
@@ -129,6 +138,7 @@
   margin-top: 18vh;
   margin-left: 10vh;
   width: 40em;
+
   transform: rotate(-25deg);
   filter: drop-shadow(30px 45px 40px #161616);
 }
@@ -449,68 +459,28 @@ footer .footer_main .tag .search_bar button {
     margin: 2em auto 3em auto;
   }
 }
-/**/
-/* .smallimages .iman {
-  width: 20%;
-  position: relative;
-  bottom: 150px;
-  border-radius: 100px;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-.smallimages .iwoman {
-  width: 20%;
-  position: relative;
-  bottom: 150px;
-  border-radius: 100px;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-.smallimages .ikid {
-  width: 20%;
-  position: relative;
-  bottom: 150px;
-  border-radius: 100px;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-.smallimages .iman:hover {
-  opacity: 0.7;
-}
-.smallimages .iwoman:hover {
-  opacity: 0.7;
-}
-.smallimages .ikid:hover {
-  opacity: 0.7;
-} */
-.cardd{
+
+.cardd {
   background-color: #f3f1f1;
   scroll-behavior: smooth;
-
 }
 .image-container {
   margin-top: 300px;
   position: relative;
-  /* height:50px ; */
   width: fit-content;
   display: inline-block;
-  margin-right: 3%; /*Add some spacing between image containers  */
+  margin-right: 3%;
   margin-left: 3%;
   width: 25%;
-  /* height: 20%; */
 }
 
-/* Your regular styling for the image */
 .image-container .iman {
   height: 50vh;
   width: 100%;
   position: relative;
   bottom: 120px;
-  /* border-radius: 100px; */
-
-  /* transition: opacity 0.7s ease; Add a smooth transition effect for opacity changes */
 }
-.tex{
+.tex {
   position: absolute;
   top: 50%;
   left: 5%;
@@ -518,7 +488,6 @@ footer .footer_main .tag .search_bar button {
   font-weight: bold;
   font-size: 1.2vw;
 }
-
 
 .overlay {
   position: absolute;
@@ -530,34 +499,28 @@ footer .footer_main .tag .search_bar button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0; /* Initially hidden */
-  /*background-color: rgba(52,152,219,0.7); /* Semi-transparent background color */
-  transition: opacity 0.3s ease; /* Add a smooth transition effect for opacity changes */
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 .overlay-button {
   display: block;
   padding: 10px 15px;
   margin-left: -40px;
-  /* margin-right:px; */
-  background-color:blueviolet; /* Set your button background color */
-  color: #fff; /* Set your button text color */
-  border: none;
+  background-color: blueviolet;
+  color: #fff;
   display: flex;
-  /* justify-self: center; */
   border-radius: 5px;
   cursor: pointer;
   font-size: 24px;
-  opacity: 1; /* Initially visible */
-  transition: opacity 0.3s ease; /* Add a smooth transition effect for opacity changes */
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
-
-/* Show overlay elements on hover */
-.image-container:hover .iman{
+.image-container:hover .iman {
   opacity: 0.6;
 }
-.image-container:hover .tex{
-  color :white;
+.image-container:hover .tex {
+  color: white;
 }
 .image-container:hover .overlay {
   opacity: 1;

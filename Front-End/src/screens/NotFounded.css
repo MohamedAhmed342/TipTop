@@ -1,26 +1,26 @@
 .not-found-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .not-found-container h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: #e74c3c; /* Red color for emphasis */
-  }
-  
-  .not-found-container p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    color: #777; /* Gray color for additional text */
-  }
-  
-  .not-found-container img {
-    max-width: 10%;
-    height: auto;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.not-found-container h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #e74c3c;
+}
+
+.not-found-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #777;
+}
+
+.not-found-container img {
+  max-width: 10%;
+  height: auto;
+}

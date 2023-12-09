@@ -1,19 +1,15 @@
-/* navbar css */
 nav {
   height: 80px;
   position: fixed;
   color: #fff;
   background-color: transparent;
   z-index: 9999999;
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease, box-shadow 0.3s ease;
 }
 
-nav:hover{
-
+nav:hover {
   border-color: #ffffff;
-  /* color: #000000; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -90,14 +86,12 @@ nav form input::placeholder {
 }
 
 .logo {
-  
   width: 3rem;
   height: 3rem;
-  
+
   display: inline-block;
 }
 
-/* animation of nav-btn */
 @keyframes swing {
   0% {
     transform: rotate(6deg);
@@ -132,40 +126,32 @@ nav form input::placeholder {
 nav .container .menu-btn {
   display: none;
 }
-.search{
-  /* border: 2px solid white; */
-  box-shadow: 8 5 10px rgba(255, 255, 255, 0.1); /* Box shadow with a subtle effect */
+.search {
+  box-shadow: 8 5 10px rgba(255, 255, 255, 0.1);
 
-border-radius: 500px;
+  border-radius: 500px;
 }
 .search-input:focus::placeholder {
   color: transparent;
-  box-shadow: 8 5 10px rgba(255, 255, 255, 0.1); /* Box shadow with a subtle effect */
-
+  box-shadow: 8 5 10px rgba(255, 255, 255, 0.1);
 }
 
-
-.number-quintity  span {
+.number-quintity span {
   position: absolute;
   top: 45px;
-  right:190 px;
-  /* background: #123; */
+  right: 190 px;
   font-size: 15px;
   font-weight: 1000;
   padding: 3px 5px;
   border-radius: 50%;
-  /* z-index: -1; */
   display: inline-block;
-  width: 20px; /* Adjust the width of the circle */
-  height: 20px; /* Adjust the height of the circle */
-  background-color: #ffffff; 
-  color: #e71fc4; /* Adjust the text color */
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  color: #e71fc4;
   text-align: center;
-  line-height: 16px; /* Should be equal to the height for vertical centering */
+  line-height: 16px;
 }
-
-
-/* MEDIA QUERIES */
 
 @media screen and (max-width: 930px) {
   nav .menu,

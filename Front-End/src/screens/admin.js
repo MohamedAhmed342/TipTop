@@ -1,12 +1,11 @@
 
 import React from "react";
-// import "../../components/auth/SignUp.css";
 import {FaCommentDollar,FaShoePrints,FaCodepen,FaPhone} from "react-icons/fa";
 import  { useState,useRef } from 'react';
 
 
 const Admin = () => {
-    const [avatarSrc, setAvatarSrc] = useState("https://placekitten.com/150/150");
+    const [ setAvatarSrc] = useState("https://placekitten.com/150/150");
     const fileInputRef = useRef(null);
   
     const handleImageChange = (event) => {
@@ -98,7 +97,6 @@ const Admin = () => {
     <div className="bodyy2" >
     <div className="wrapper"style={{marginTop:"70px"}}>
       <form action="" onSubmit={handleSubmit}>
-        {/* <h1>TipTop Store</h1> */}
         <h1>Add Component</h1>
         <div className="input-box">
           <input type="text" name="name" placeholder="Shoes Name"   value={formData.name} onChange={handleInputChange} />
@@ -130,9 +128,7 @@ const Admin = () => {
           <button className="avatar-button" style={{marginBottom:"30px"}} onClick={handleButtonClick}>Upload Image</button>
        
         <button type="submit">Add</button>
-        <div className="register-link">
-         <p>Already have an account ? <a href="./SignIn">Login</a></p>
-        </div>
+        
       </form>
     </div>
     </div>

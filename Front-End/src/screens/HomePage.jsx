@@ -11,26 +11,18 @@ import manshoes from "../components/assets/man4.jpg";
 import womanshoes from "../components/assets/woman.jpg";
 import kidshoes from "../components/assets/kid.jpg";
 
-import { FaStar, FaStarHalfAlt } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
     <Fragment>
       <div className="header">
         <section className="hero">
-          {/* left hero section here */}
           <div className="leftHero">
             <h2>NEW COLLECTION </h2>
             <h1>BEST</h1>
             <h1 className="shoes">SHOES</h1>
-            {/* <div className="rating">
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalfAlt />
-            </div> */}
+
             <p className="title">
               OUR CHOICE OF MEN'S AND WOWEN AND KIDS RUNNING TRAINERS
             </p>
@@ -44,16 +36,15 @@ const HomePage = () => {
               Shop Now
             </a>
           </div>
-          {/* right hero section here */}
+
           <div className="rightHero">
             <img src={hero} alt="Adidas Forest Hill" />
           </div>
         </section>
 
         <section className="cardd">
-       
           <div class="review2">
-          <h1 >Our Categories</h1>
+            <h1>Our Categories</h1>
 
             <Link className="image-container" to="/men-shoe">
               <img className="iman" src={manshoes} alt="for men" />
@@ -87,7 +78,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        <div class="review" >
+        <div class="review">
           <h1>
             Customer's<span>review</span>
           </h1>

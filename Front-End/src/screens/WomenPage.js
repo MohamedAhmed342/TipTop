@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from "react";
-
 import Products from "../Products/Products";
 import products from "../db/data3";
 import Recommended from "../Recommended/Recommended";

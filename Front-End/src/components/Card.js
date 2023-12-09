@@ -1,14 +1,10 @@
-// import { BsFillBagFill } from "react-icons/bs";
 
-// import { useContext, useState } from "react";
-
-// import { CartContext } from "../App";
 import "./Card.css";
 import { useShopingCart } from "../context/ShopingCartContext";
 const Card = ({ id, img, title, star, reviews, prevPrice, newPrice }) => {
   const { getNumberOfItems, addToCart, deleteFromCart } = useShopingCart();
   const quantity = getNumberOfItems(id);
-  // console.log(quantity);
+
   return (
     <section className="card">
       <img src={img} alt={title} className="card-img" />
@@ -41,7 +37,6 @@ const Card = ({ id, img, title, star, reviews, prevPrice, newPrice }) => {
               </button>
             )}
 
-            {/* <BsFillBagFill className="bag-icon" /> */}
           </div>
         </section>
       </div>

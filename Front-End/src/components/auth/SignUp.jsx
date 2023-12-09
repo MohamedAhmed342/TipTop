@@ -1,6 +1,5 @@
 
 import React from "react";
-// import "../../components/auth/SignUp.css";
 import {FaUser,FaLock,FaLocationArrow,FaPhone} from "react-icons/fa";
 import  { useState } from 'react';
 

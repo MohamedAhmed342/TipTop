@@ -28,11 +28,7 @@ const UserInfo = () => {
     <div className="bodyy">
       <div className="user-profile">
         <div className="avatar-container">
-          <img
-            src={avatarSrc}
-            alt="User Avatar"
-            className="avatar"
-          />
+          <img src={avatarSrc} alt="User Avatar" className="avatar" />
           <input
             type="file"
             accept="image/*"
@@ -40,7 +36,9 @@ const UserInfo = () => {
             style={{ display: "none" }}
             ref={fileInputRef}
           />
-          <button className="avatar-button" onClick={handleButtonClick}>Select Avatar</button>
+          <button className="avatar-button" onClick={handleButtonClick}>
+            Select Avatar
+          </button>
         </div>
         <div className="user-info">
           <div className="info-row">
