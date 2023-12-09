@@ -51,7 +51,11 @@ header::after {
   font-size: 0.8rem;
   margin-top: 5px;
 }
-
+.YourCard{
+  color: #ffffff;
+  
+  margin-top: 0 auto;
+}
 /* Style for a valid input (optional) */
 .valid-input {
   border: 1px solid green;
@@ -75,10 +79,11 @@ header::after {
 
 
 .cart-container {
-  width: 90%;
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
+  width: 40%;
+  margin: 0 auto;  
+  /* margin-top: 0px; */
+ justify-content: center;
+ 
   
 }
 
@@ -86,6 +91,7 @@ header::after {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
+  
 
 }
 

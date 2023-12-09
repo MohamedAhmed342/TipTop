@@ -26,24 +26,30 @@ export default function CartPage() {
   };
 
   return (
+    
     <div className="CartPage">
        <Typography
-        className="font"
+        style={{ marginTop: "10px", color:"white",
+       }}
         variant="h4"
-        style={{ marginTop: "20px" }}
+      
         align="center"
         gutterBottom
       >
         Your Cart
       </Typography>
+      
       {cartItems
         .filter((item) => item.quantity > 0)
         .map((item) => {
           return <CartItem key={item?.id} {...item} />;
         })}
-         <div className="cart-summery">
-          <Card>
-            <CardContent>
+        
+         <div className="cart-summeryy">
+          
+          <Card style={{ backgroundColor:  "transparent", color: 'white', boxShadow: '0 1px 5px #e71fc4' }} >
+            <CardContent >
+              
               <Typography className="font" variant="h5" gutterBottom>
                 ORDER SUMMERY
               </Typography>
