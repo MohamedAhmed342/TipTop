@@ -20,14 +20,16 @@ export default function CartItem({ id, quantity }) {
   const numberOfProducts = getNumberOfAllItems();
   const item = data.find((item) => item.id === id);
   if (item == null) return null;
-  const { img, title, star, reviews, prevPrice, newPrice } = item;
+  const { img, title, newPrice } = item;
 
   return (
+
     <div className="cart-container">
      
       <div className="cart-section">
+        
         <div className="cart-history">
-          <Card className="cart-history-flex">
+          <Card style={{ backgroundColor:  "transparent", color: 'white', boxShadow: '0 1px 5px #e71fc4' }}>
             <CardActionArea className="card-action">
               <CardMedia component="img" height="150" width="50"  alt={title} image={img} />
             </CardActionArea>
@@ -50,14 +52,7 @@ export default function CartItem({ id, quantity }) {
               </div>
             </CardContent>
           </Card>
-          {/* <Typography
-            className="font"
-            variant="h6"
-            color="secondary"
-            gutterBottom
-          >
-            Cart is empty
-          </Typography> */}
+          
         </div>
 
       
