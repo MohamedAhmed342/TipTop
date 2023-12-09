@@ -75,11 +75,22 @@ header::after {
   border-color: #ffffff; /* Change the border color on hover */
   color: #000000; /* Change the text color on hover */
 }
-
+.bodyy2{
+  font-family: 'Poppins',sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background:  url('../../components/assets/s.jpg') no-repeat ; */
+  background-size: cover;
+  background-position: center;
+}
 
 
 .cart-container {
-  width: 40%;
+  width: 30%;
   margin: 0 auto;  
   /* margin-top: 0px; */
  justify-content: center;

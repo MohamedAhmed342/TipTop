@@ -52,7 +52,9 @@ const HomePage = () => {
 
         <section className="cardd">
        
-          <div >
+          <div class="review2">
+          <h1 >Our Categories</h1>
+
             <Link className="image-container" to="/men-shoe">
               <img className="iman" src={manshoes} alt="for men" />
               <span className="tex">
@@ -85,7 +87,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        <div class="review" id="Review">
+        <div class="review" >
           <h1>
             Customer's<span>review</span>
           </h1>

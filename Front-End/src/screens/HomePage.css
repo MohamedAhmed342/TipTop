@@ -138,6 +138,11 @@
   height: 100vh;
   padding-top: 80px;
 }
+.review2 {
+  width: 100%;
+  height: 100vh;
+  padding-top: 80px;
+}
 
 .review h1 {
   color: white;
@@ -147,6 +152,17 @@
   justify-content: center;
   margin-bottom: 30px;
   text-transform: uppercase;
+}
+.review2 h1 {
+  color: #6c14d0;
+  font-size: 60px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 5px;
+  margin-bottom: -100px;
+  /* text-transform: uppercase; */
 }
 
 .review h1 span {
@@ -498,10 +514,11 @@ footer .footer_main .tag .search_bar button {
   position: absolute;
   top: 50%;
   left: 5%;
-  color: wheat;
+  color: rgb(201, 198, 209);
   font-weight: bold;
   font-size: 1.2vw;
 }
+
 
 .overlay {
   position: absolute;
@@ -536,10 +553,12 @@ footer .footer_main .tag .search_bar button {
 
 
 /* Show overlay elements on hover */
-.image-container:hover .iman {
+.image-container:hover .iman{
   opacity: 0.6;
 }
-
+.image-container:hover .tex{
+  color :white;
+}
 .image-container:hover .overlay {
   opacity: 1;
 }

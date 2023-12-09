@@ -132,6 +132,17 @@ nav form input::placeholder {
 nav .container .menu-btn {
   display: none;
 }
+.search{
+  /* border: 2px solid white; */
+  box-shadow: 8 5 10px rgba(255, 255, 255, 0.1); /* Box shadow with a subtle effect */
+
+border-radius: 500px;
+}
+.search-input:focus::placeholder {
+  color: transparent;
+  box-shadow: 8 5 10px rgba(255, 255, 255, 0.1); /* Box shadow with a subtle effect */
+
+}
 
 
 .number-quintity  span {

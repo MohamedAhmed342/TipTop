@@ -71,11 +71,13 @@ const Navbar = ({ handleInputChange, query }) => {
                 </div>
 
                 <input
-          className="search"
+          // className="search" 
+          // placeholder="Search"
           type="text"
           onChange={handleInputChange}
           value={query}
-          placeholder="Search"
+          // name = "Search"
+          // placeholder="Search"
         />
         <div className="number-quintity">
                 <Link to="/cart">

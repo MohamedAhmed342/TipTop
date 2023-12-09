@@ -9,6 +9,7 @@ import NotFounded from "./screens/NotFounded"
 import CartPage from "./screens/CartPage";
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import SignIn from "./components/auth/SignIn";
+import Admin from "./screens/admin";
 import SignUp from "./components/auth/SignUp";
 import UserInfo from "./screens/userInfo";
 import ShopingCartProvider from "./context/ShopingCartContext";
@@ -32,6 +33,7 @@ function App() {
       <Route path="/userprofile" element={<UserInfo></UserInfo >}></Route>
       <Route path="*" element={<NotFounded></NotFounded >}></Route>
       <Route path="/cart" element={<CartPage />} />
+      <Route path="/Admin" element={<Admin />} />
 
 
       </Routes>

@@ -19,6 +19,7 @@ const SignIn = () => {
     // This data should come from the Sign-Up process or your server
     { username: 'salah', password: '1234' },
     { username: 'hima', password: '12345' },
+    { username: 'gedo', password: '12345' },
     // Add more user data as needed
   ];
 
