@@ -54,7 +54,7 @@ const HomePage = () => {
        
           <div >
             <Link className="image-container" to="/men-shoe">
-              <img className="iman" src={kidshoes} alt="for men" />
+              <img className="iman" src={manshoes} alt="for men" />
               <span className="tex">
                 Shoes For Men OF All Types, Sizes, Colors And Various Brands
               </span>
@@ -64,7 +64,7 @@ const HomePage = () => {
             </Link>
 
             <Link className="image-container" to="/women-shoe">
-              <img className="iman" src={kidshoes} alt="for men" />
+              <img className="iman" src={womanshoes} alt="for men" />
               <span className="tex">
                 Shoes For Women OF All Types, Sizes, Colors And Various Brands
               </span>
