@@ -126,7 +126,7 @@ const Navbar = ({ handleInputChange, query }) => {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
               >
-                <Link to="./signin"
+                <Link to="./userprofile"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   <MenuItem onClick={handleClose}>Profile</MenuItem>
@@ -134,12 +134,12 @@ const Navbar = ({ handleInputChange, query }) => {
                 <Link to="./signup"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  <MenuItem onClick={handleClose}>Login</MenuItem>
+                  <MenuItem onClick={handleClose}>Register</MenuItem>
                 </Link>
                 <Link to="./signin"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  <MenuItem onClick={handleClose}>Register</MenuItem>
+                  <MenuItem onClick={handleClose}>Login</MenuItem>
                 </Link>
               </Menu>
             </div>

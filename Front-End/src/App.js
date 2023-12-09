@@ -10,6 +10,7 @@ import CartPage from "./screens/CartPage";
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
+import UserInfo from "./screens/userInfo";
 import ShopingCartProvider from "./context/ShopingCartContext";
 
 
@@ -28,6 +29,7 @@ function App() {
       <Route path="/signin" element={<SignIn></SignIn >}></Route>
       <Route path="/men-shoe/signup" element={<SignIn></SignIn >}></Route>
       <Route path="/signup" element={<SignUp></SignUp >}></Route>
+      <Route path="/userprofile" element={<UserInfo></UserInfo >}></Route>
       <Route path="*" element={<NotFounded></NotFounded >}></Route>
       <Route path="/cart" element={<CartPage />} />
 
